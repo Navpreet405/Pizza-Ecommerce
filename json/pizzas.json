@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Classic",
+    "price": "20",
+    "smallDescription": "A timeless classic with fresh ingredients.",
+    "bigDescription": "The Margherita Classic features a delicious combination of fresh tomato sauce, creamy mozzarella cheese, and a hint of basil, delivering a traditional Italian flavor.",
+    "image": "images/pizza-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Truffle Mushroom Haven",
+    "price": "40",
+    "smallDescription": "A luxurious blend of truffle and mushrooms.",
+    "bigDescription": "Truffle Mushroom Haven combines the earthy flavors of mushrooms with the rich aroma of truffle oil, topped with gooey cheese for a premium experience.",
+    "image": "images/pizza-2.png"
+  },
+  {
+    "id": 3,
+    "name": "Pepperoni Supreme",
+    "price": "20",
+    "smallDescription": "A meat lover's delight with spicy pepperoni.",
+    "bigDescription": "Pepperoni Supreme is packed with generous slices of spicy pepperoni on a bed of rich tomato sauce and melted cheese, creating a zesty, savory flavor.",
+    "image": "images/pizza-3.png"
+  },
+  {
+    "id": 4,
+    "name": "Caprese Charm",
+    "price": "30",
+    "smallDescription": "A refreshing mix of tomatoes and basil.",
+    "bigDescription": "Caprese Charm brings together juicy tomatoes, fresh mozzarella, and aromatic basil leaves, drizzled with olive oil for a light and delightful taste.",
+    "image": "images/pizza-4.png"
+  },
+  {
+    "id": 5,
+    "name": "Truffle Parmesan Crust",
+    "price": "20",
+    "smallDescription": "A cheesy crust with a hint of truffle.",
+    "bigDescription": "Truffle Parmesan Crust is a unique pizza featuring a crispy crust layered with parmesan cheese and infused with the subtle flavor of truffle oil.",
+    "image": "images/pizza-5.png"
+  },
+  {
+    "id": 6,
+    "name": "Four Cheese Extravaganza",
+    "price": "40",
+    "smallDescription": "A blend of four rich cheeses.",
+    "bigDescription": "The Four Cheese Extravaganza combines mozzarella, cheddar, gouda, and parmesan cheeses for a creamy, indulgent flavor that melts in your mouth.",
+    "image": "images/pizza-6.png"
+  },
+  {
+    "id": 7,
+    "name": "Farmhouse Delight",
+    "price": "20",
+    "smallDescription": "Fresh veggies for a wholesome treat.",
+    "bigDescription": "Farmhouse Delight offers a vibrant mix of freshly chopped vegetables, paired with melted cheese and a tangy tomato base for a healthy and flavorful option.",
+    "image": "images/pizza-7.png"
+  },
+  {
+    "id": 8,
+    "name": "Roasted Veggie Medley",
+    "price": "30",
+    "smallDescription": "Perfectly roasted veggies with cheese.",
+    "bigDescription": "Roasted Veggie Medley features a savory mix of roasted bell peppers, zucchini, and onions topped with melted cheese and a crisp crust.",
+    "image": "images/pizza-8.png"
+  },
+  {
+    "id": 9,
+    "name": "Tomato Basil Bliss",
+    "price": "40",
+    "smallDescription": "Simple and fresh with tomatoes and basil.",
+    "bigDescription": "Tomato Basil Bliss combines the sweetness of fresh tomato slices with fragrant basil, delivering a simple yet flavorful pizza experience.",
+    "image": "images/pizza-9.png"
+  }
+]

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Pizzario</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <section class="flex">
+        <a href="index.html" class="logo">Fresh Pizzario</a>
+
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#order">Order</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="cart-btn" class="fas fa-shopping-cart"><span></span></div>
+        </div>
+      </section>
+    </header>
+
+    <!-- header section ends -->
+
+    <div class="user-account">
+      <section>
+        <div id="close-account"><span>Close</span></div>
+
+        <div class="user">
+          <p><span>you are not logged in now!</span></p>
+        </div>
+
+        <div class="display-orders">
+          <p
+            style="
+              font-family: 'Dancing Script', cursive;
+              font-size: 24px;
+              color: maroon;
+              font-weight: bolder;
+            "
+          >
+            Made with love, delivered with flavor.
+          </p>
+        </div>
+
+        <div class="flex">
+          <form name="login" action="" method="post">
+            <h3>login now</h3>
+            <input
+              type="email"
+              name="email"
+              required
+              class="box"
+              placeholder="enter your email"
+              maxlength="50"
+            />
+            <input
+              type="password"
+              name="pass"
+              required
+              class="box"
+              placeholder="enter your password"
+              maxlength="20"
+            />
+            <input type="submit" value="login now" name="login" class="btn" />
+          </form>
+
+          <form name="register" action="" method="post">
+            <h3>register now</h3>
+            <input
+              type="text"
+              name="name"
+              required
+              class="box"
+              placeholder="enter your name"
+              maxlength="20"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              class="box"
+              placeholder="enter your email"
+              maxlength="50"
+            />
+            <input
+              type="password"
+              name="pass"
+              required
+              class="box"
+              placeholder="enter your password"
+              maxlength="20"
+            />
+            <input
+              type="password"
+              name="cpass"
+              required
+              class="box"
+              placeholder="confirm your password"
+              maxlength="20"
+            />
+            <input
+              type="submit"
+              value="register now"
+              name="register"
+              class="btn"
+            />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="shopping-cart">
+      <section>
+        <div id="close-cart"><span>Close</span></div>
+        <a href="#order" class="btn">order now</a>
+        <div class="total-price"style="font-size: large; margin-top: 10px;">Total: $0.00</div>
+
+      </section>
+    </div>
+
+    <div class="home-bg">
+      <section class="home" id="home">
+        <div class="slide-container">
+          <div class="slide active">
+            <div class="image">
+              <img src="images/hm1.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Origianl from Italy</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="image">
+              <img src="images/hm3.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Fresh from the oven</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="image">
+              <img src="images/h5.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Crispy or Thick!! Your choice</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading">about us</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/piz.png" width="200px" alt="" />
+          <h3>made with love</h3>
+          <p>
+            At Ozza, every pizza is made with care and passion. We select the finest ingredients,
+            ensuring each bite is filled with love and dedication. From dough to toppings, 
+            we guarantee the highest quality in every pizza. We aim to deliver not just great 
+            flavors, but also a memorable experience. Our team is devoted to making every meal feel 
+            special and full of warmth.
+          </p>
+          <a href="#menu" class="btn">our menu</a>
+        </div>
+
+        <div class="box">
+          <img src="images/piz2.png" width="80px" alt="" />
+          <h3>30 minutes delivery</h3>
+          <p>
+            We know your time matters, so we ensure that your pizza arrives hot and fresh 
+            in just 30 minutes. With our fast delivery guarantee, you can trust us to bring your 
+            meal right to your doorstep. Whether you’re at home or the office, we promise quick 
+            and reliable service. Enjoy your Ozza pizza without delay and savor every moment of 
+            the experience.
+          </p>
+          <a href="#menu" class="btn">our menu</a>
+        </div>
+
+        <div class="box">
+          <img src="images/piz3.png" width="200px" alt="" />
+          <h3>share with freinds</h3>
+          <p>
+            Good pizza is always better when shared. Whether you're hosting a party, having a casual
+            get-together, or just enjoying a night in, Ozza is the perfect choice for sharing with friends. 
+            Invite your loved ones to dig in and savor the delicious flavors together. Plus, with our wide 
+            selection of pizzas, there’s something for everyone to enjoy!
+          </p>
+          <a href="#menu" class="btn">our menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <section id="menu" class="menu">
+      <h1 class="heading">our menu</h1>
+
+      <div class="box-container" id="dynamic-content"></div>
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+      <h1 class="heading">order now</h1>
+
+      <form action="" method="post">
+        <div class="display-orders">
+          <p
+            style="
+              font-family: 'Dancing Script', cursive;
+              font-size: 24px;
+              color: maroon;
+              font-weight: bolder;
+            "
+          >
+            Made with love, delivered with flavor.
+          </p>
+        </div>
+
+        <div class="flex">
+          <div class="inputBox">
+            <span>your name :</span>
+            <input
+              type="text"
+              name="name"
+              class="box"
+              required
+              placeholder="enter your name"
+              maxlength="20"
+            />
+          </div>
+          <div class="inputBox">
+            <span>your number :</span>
+            <input
+              type="number"
+              name="number"
+              class="box"
+              required
+              placeholder="enter your number"
+              min="0"
+            />
+          </div>
+          <div class="inputBox">
+            <span>payment method</span>
+            <select name="method" class="box">
+              <option value="cash on delivery">cash on delivery</option>
+              <option value="credit card">credit card</option>
+              <option value="paytm">interac</option>
+              <option value="paypal">paypal</option>
+            </select>
+          </div>
+          <div class="inputBox">
+            <span>address line 01 :</span>
+            <input
+              type="text"
+              name="flat"
+              class="box"
+              required
+              placeholder="e.g. flat no."
+              maxlength="50"
+            />
+          </div>
+          <div class="inputBox">
+            <span>address line 02 :</span>
+            <input
+              type="text"
+              name="street"
+              class="box"
+              required
+              placeholder="e.g. street name."
+              maxlength="50"
+            />
+          </div>
+          <div class="inputBox">
+            <span>pin code :</span>
+            <input
+              type="number"
+              name="pin_code"
+              class="box"
+              required
+              placeholder="e.g. 123456"
+              min="0"
+            />
+          </div>
+        </div>
+
+        <input type="submit" value="order now" class="btn" name="order" />
+      </form>
+    </section>
+
+    <!-- order section ends -->
+
+    <!-- faq section starts  -->
+
+    <section class="faq" id="faq">
+      <h1 class="heading">FAQ</h1>
+
+      <div class="accordion-container">
+        <div class="accordion active">
+          <div class="accordion-heading">
+            <span>How do I place an order?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Simply select your favorite pizzas, add them to your cart, and
+            proceed to checkout. You can customize each pizza with your
+            preferred toppings and crust options before finalizing your order.
+            or yo can call at our number and place an order.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <span>Is there a minimum order for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Yes, the minimum order amount for delivery is $15. For orders under
+            this amount, we encourage in-store pickup to save on delivery fees
+            and get your pizza fresh and hot.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <span>can I order for large events?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Yes, we offer catering for large events like parties and corporate
+            gatherings. You can place bulk orders in advance, and we’ll help
+            customize the menu to suit your event’s needs. Just contact us for
+            details!
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <span>What are your delivery hours?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Our delivery hours are from 11:00 AM to 11:00 PM every day. Orders
+            can be placed anytime within this window for same-day delivery.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <span>Do you offer gluten-free or vegan options?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Yes! We offer gluten-free crusts and a variety of vegan toppings, so
+            you can enjoy a delicious pizza that meets your dietary needs
+            without compromising on flavor
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>phone number &#128383 </h3>
+          <p style="font-size: small;">+1 (289) - 54x xxxx</p>
+          <p style="font-size: small;">+1 (416) - 82x xxxx</p>
+          <p style="font-size: small;">+1 (437) - 48x xxxx</p>
+          <p style="font-size: small;">+1 (365) - 86x xxxx</p>
+        </div>
+
+        <a href="https://www.google.com/maps?q=121+Brunel+Road,+Mississauga,+ON+L4Z+3E9" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>our address  &#127869</h3>
+            <p style="font-size: small;">Restaurant Location:</p>
+            <p style="font-size: small;">121 Brunel Road Mississauga ON,</p>
+            <p style="font-size: small;">L4Z 3E9</p>
+            <p style="font-size: small; text-decoration: underline; color: #a45848;">&#128664; Click here to see the directions &#128664;</p>
+          </div>
+        </a>
+
+        <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours &#127829</h3>
+          <p style="font-size: small;">Weekdays: </p>
+          <p style="font-size: small;">10:00am to 10:pm</p>
+          <p style="font-size: small;">Weekends:</p>
+          <p style="font-size: small;">11:am to 11:30pm</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email address &#128140</h3>
+          <p style="font-size: small;">c0941391@mylambton.cam</p>
+          <p style="font-size: small;">c0934008@mylambton.ca</p>
+          <p style="font-size: small;">c0934034@mylambton.ca</p>
+          <p style="font-size: small;">c0931246@mylambton.ca</p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="images/ab1.jpg"
+            width="100"
+            alt=""
+            style="border-radius: 50px"
+          />
+          <h3>Navpreet Singh</h3>
+          <p>c0934034</p>
+          <p>c0934034@mylambton.ca</p>
+        </div>
+
+        <div class="box">
+          <img src="images/ab2.jpg" width="100" alt="" style="border-radius:
+          50px;"/ >
+          <h3>Pahul Singh</h3>
+          <p>c0941391</p>
+          <p>c0941391@mylambton.ca</p>
+        </div>
+
+        <div class="box">
+          <img
+            src="images/ab3.jpg"
+            width="100"
+            alt=""
+            style="border-radius: 50px"
+          />
+          <h3>Rhythm Sharma</h3>
+          <p>c0934008</p>
+          <p>c0934008@mylambton.ca</p>
+        </div>
+
+        <div class="box">
+          <img
+            src="images/ab4.jpg"
+            width="100"
+            alt=""
+            style="border-radius: 50px"
+          />
+          <h3>Anmooldeep Singh</h3>
+          <p>c0931246</p>
+          <p>c0931246@mylambton.ca</p>
+        </div>
+      </div>
+
+      <div class="credit">
+        &copy; created by <span>Our Team</span
+        ><span style="color: red">&#10084;</span> | with love and care
+      </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="order-modal" class="order-modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close-modal">&times;</span>
+        <img src="images/order1.gif" alt="Success Icon" class="success-image" />
+        <h2>Your order has been placed!</h2>
+        <p>Thank you for your purchase. We will process your order shortly.</p>
+        <button id="close-popup" class="btn">Close</button>
+      </div>
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

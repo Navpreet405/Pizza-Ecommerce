@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="css/stylePDP.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonts and Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+  </head>
+  <body>
+  
+    <div class="product-detail">
+      <div class="image">
+        <img src="https://via.placeholder.com/500x500" alt="Product Image" />
+      </div>
+      <div class="content">
+        <h1 class="name">Margherita Classic</h1>
+        <div class="price">$2.00</div>
+        <div class="small-description">
+          A timeless classic with fresh ingredients.
+        </div>
+        <div class="long-description">
+          The Margherita Classic features a delicious combination of fresh tomato
+          sauce, creamy mozzarella cheese, and a hint of basil, delivering a
+          traditional Italian flavor.
+        </div>
+    
+        <!-- Buttons above form -->
+        <div class="buttons">
+          <button class="checkout">
+            <i class="fas fa-home"></i> Home
+          </button>
+          <!-- <button class="addCart">
+            Add To Cart
+            <i class="fas fa-shopping-cart"></i>
+          </button> -->
+        </div>
+    
+        <!-- Customization Options -->
+        <div class="options">
+          <h3>CUSTOMIZE YOUR PIZZA</h3>
+    
+          <!-- Cheese Options -->
+          <div class="option-group">
+            <div class="option-label">Cheese:</div>
+            <div class="square-selector" id="cheese-options">
+              <div class="square" data-value="Normal">Regular</div>
+              <div class="square" data-value="Extra Loaded">Extra Loaded</div>
+              <div class="square" data-value="Mozzarella">Mozzarella</div>
+              <div class="square" data-value="Cheddar">Cheddar</div>
+            </div>
+          </div>
+    
+          <!-- Crust Options -->
+          <div class="option-group">
+            <div class="option-label">Crust:</div>
+            <div class="square-selector" id="crust-options">
+              <div class="square" data-value="Thick">Regular</div>
+              <div class="square" data-value="Thin">Thin</div>
+              <div class="square" data-value="Stuffed">Stuffed</div>
+            </div>
+          </div>
+    
+          <!-- Sauce Options -->
+          <div class="option-group">
+            <div class="option-label">Additional Sauce(optional):</div>
+            <div class="square-selector" id="sauce-options">
+              <div class="square" data-value="BBQ">BBQ</div>
+              <div class="square" data-value="Garlic Parmesan">Garlic Parmesan</div>
+              <div class="square" data-value="Alfredo">Alfredo</div>
+              <div class="square" data-value="Pesto">Pesto</div>
+              <div class="square" data-value="Spicy Marinara">Spicy Marinara</div>
+            </div>
+          </div>
+    
+          <!-- Spice Level Slider -->
+          <div class="spice-level-container">
+            <label for="spice-slider" class="spice-label" style="color: white; font-weight: bold;">Spice Level:</label>
+            <div class="slider-wrapper">
+              <input
+                type="range"
+                id="spice-slider"
+                min="0"
+                max="2"
+                value="0"
+              />
+              <div class="slider-levels">
+                <span>Mild</span>
+                <span>Hot</span>
+                <span>Extra Hot</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+      <!-- Catalog Section -->
+      <div class="catalog">
+        <h2 style="font-family: 'Dancing Script', cursive; color: #800; margin-left: 40px; font-weight: bold; font-size: 36px;">Try our other Pizza's:</h2>
+        <div class="catalog-items"></div>
+      </div>
+
+      <div class="shopping-cart">
+        <section>
+          <div id="close-cart"><span>close</span></div>
+          <a href="#order" class="btn">order now</a>
+        </section>
+      </div>
+
+
+    </div>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+    <script src="js/detail.js" type="module"></script>
+
+  </body>
+</html>

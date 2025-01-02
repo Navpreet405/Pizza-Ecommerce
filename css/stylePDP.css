@@ -1,0 +1,435 @@
+/* General Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EADED2; /* Background for the whole page */
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a; /* Neutral text color */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Product Detail Section */
+  .product-detail {
+    background-image: url('../images/3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 40px;
+    background-color: #efece8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    border-radius: 8px;
+  }
+  
+  .product-detail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+  }
+  
+  .product-detail .content {
+    position: relative;
+    z-index: 2;
+  }
+/* from here chkna */  
+  
+  .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .content .name {
+    font-size: 28px;
+    font-weight: bolder;
+    color: white; /* Styled name color */
+    margin-bottom: 12px;
+  }
+  
+  .content .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Bright red for price */
+    margin-bottom: 16px;
+  }
+  
+  .content .small-description,
+  .content .long-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .buttons button {
+    background-color: #a45848; /* Button color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #813c34; /* Darker shade on hover */
+  }
+  
+  .buttons .checkout {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Catalog Section */
+  .catalog-items {
+    background-image: url('../images/pdp3.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    background-color: #EADED2; /* Matches page background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .catalog-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 12px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+  }
+  
+  .catalog-item::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it on top of the background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65); /* More transparent white background (lower opacity) */
+    border-radius: 8px; /* Matches the container's border-radius */
+    z-index: 1; /* Ensure the background is below the content */
+  }
+  
+  .catalog-item > * {
+    position: relative; /* Ensure content stays above the pseudo-element */
+    z-index: 2; /* Keeps all the child elements above the background layer */
+  }
+  
+  
+  .catalog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .catalog-item img {
+    width: 100%; /* Ensures the image fits the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Matches container border radius */
+    object-fit: cover;
+  }
+  
+  .item-content {
+    text-align: center;
+    margin-top: 12px;
+  }
+  
+  .item-name {
+    font-size: 22px;
+    font-weight: bolder;
+    color: whitesmoke; /* Styled name color */
+    margin: 8px 0;
+    text-decoration: none; /* Removes underline */
+  }
+  
+  .item-name:hover {
+    color: #813c34; /* Darker on hover */
+  }
+  
+  .item-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-weight: bold; /* Tomato red for price */
+    margin-bottom: 8px;
+  }
+  
+  .item-description {
+    font-size: 17px;
+    color: white;
+    font-weight: bold; /* Subtle gray */
+    margin-top: 8px;
+  }
+  
+  /* Links */
+  a {
+    color: inherit; /* Match the surrounding text */
+    text-decoration: none; /* Removes underline */
+  }
+  
+  a:hover {
+    color: #a45848; /* Adds hover effect to links */
+  }
+  
+
+  .options {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  .options h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .option-group {
+    margin: 15px 0;
+  }
+  
+  .option-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .square-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .square {
+    background-color: #946960;
+    border: 2px solid #555;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .square:hover {
+    transform: translateY(-3px);
+    background-color: #813c34;
+  }
+  
+  .square.selected {
+    border-color: #813c34;
+    background-color: #813c34;
+  }
+  
+  
+
+
+  /* Slider container styling */
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#spice-slider {
+  -webkit-appearance: none; /* Remove default styling */
+  width: 150px; /* Keep the slider small */
+  height: 8px; /* Height of the slider track */
+  background: linear-gradient(to right, #5cb85c, #f0ad4e, #d9534f); /* Gradient matching warm colors */
+  border-radius: 10px;
+  outline: none;
+  transition: background 0.3s ease; /* Smooth color transitions */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Slider thumb styling */
+#spice-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none;
+  width: 20px; /* Thumb size */
+  height: 20px;
+  background-color: #d9534f; /* White thumb */
+  border: 2px solid #d9534f; /* Border color to match red theme */
+  border-radius: 50%; /* Circular thumb */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  transition: transform 0.15s ease-in-out; /* Smooth transition for thumb interactions */
+  cursor: pointer;
+}
+
+#spice-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+#spice-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #d9534f;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#spice-slider::-moz-range-thumb:hover {
+  transform: scale(1.2); /* Firefox equivalent */
+}
+
+#spice-slider::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #d9534f;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* Label styles */
+.slider-levels {
+  display: flex;
+  justify-content: space-between;
+  width: 150px; /* Matches slider width */
+  margin-top: 5px;
+}
+
+.slider-levels span {
+  font-size: 12px;
+  color: #fff; /* Adjust to fit background */
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+/* Responsive styles for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  /* For tablets and smaller screens */
+
+  /* Main container adjustments */
+  .product-detail {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 10px; /* Add padding to prevent edge clipping */
+  }
+
+  /* Image container styling */
+  .product-detail .image {
+    width: 100%;
+    margin-bottom: 15px; /* Add space below the image */
+    text-align: center; /* Center-align the image */
+  }
+
+  .product-detail .image img {
+    width: 80%; /* Scale image to 80% of the screen width */
+    max-width: 400px; /* Limit the maximum size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Center the image within its container */
+  }
+
+  /* Text container styling */
+  .product-detail .text-container {
+    width: 100%;
+    text-align: center; /* Center-align text */
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  /* Selection options styling */
+  .product-detail .selection-container {
+    width: 100%;
+    max-width: 400px; /* Ensure it doesn't stretch too much */
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* For mobile screens */
+
+  /* Ensure vertical stacking for image and text */
+  .product-detail {
+    flex-direction: column; /* Stack image, text, and options vertically */
+  }
+
+  .product-detail .image img {
+    width: 100%; /* Fully fluid for mobile */
+    max-width: 350px; /* Larger size for smaller screens */
+    margin: 0 auto 20px; /* Center and add spacing below */
+  }
+
+  /* Text container adjustments */
+  .product-detail .text-container {
+    font-size: 1rem; /* Maintain readability */
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  /* Selection options spacing */
+  .product-detail .selection-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
